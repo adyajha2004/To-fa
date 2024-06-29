@@ -1,0 +1,188 @@
+/* Brand Icon text - "Julius Sans One", sans-serif */
+*{
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+body {
+
+    font-family: 'lora', serif;
+    font-weight: lighter;
+    border: none;
+    background-color: #060500;
+    color: #fff;
+    padding-top: 52px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    text-align : center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3{
+    text-align: center;
+    font-size: 24px;
+}
+
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 1.25em;
+}
+
+input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0 2px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #060405;
+    border: 1px solid #171416;
+}
+
+
+#first-imp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+    background-image: url('background.png');
+    background-size: 100% auto; /* Adjusts background size to cover full width */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    width: 116%;
+    margin-left: -8%;
+    margin-right: -8%;
+    height: 700px;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+button{
+    padding: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 40px;
+    background-color: #FFE993;
+    color: black;
+    transition: all 0.4s;
+    
+}
+
+button:hover, #learn-more:hover{
+    background-color: #DBC058;
+    color: black;
+    transform: scale(1.05);
+}
+
+#learn-more{
+    background-color: #171416;
+    color: white;
+    border: 2px solid #B5A463;
+}
+
+.card{
+    background-color: #1F1E19;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding: 28px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    border-radius: 40px;
+    height: 400px;
+    min-width: 290px;
+}
+
+.card img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.card-wrap{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.container-box{
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.signinbox{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F1E19;
+    padding: 60px 48px;
+    border-radius: 40px;
+    gap: 32px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dataentry{
+    display: flex;
+    background-color: #E6E5E6;
+    padding: 12px 20px;
+    border-radius: 40px;
+    gap: 8px;
+    width: 343px;
+}
+
+.button-container{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
