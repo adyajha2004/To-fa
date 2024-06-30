@@ -103,6 +103,7 @@ button{
     background-color: #FFE993;
     color: black;
     transition: all 0.4s;
+    border: none;
     
 }
 
