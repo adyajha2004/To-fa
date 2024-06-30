@@ -51,6 +51,21 @@ p {
     line-height: 24px;
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 0.5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FFE993; /* Thumb color */
+    border-radius: 12px; /* Rounded corners for the thumb */
+    border:none; /* Border around the thumb */
+}
+
 input {
     border: none;
     outline: none;
@@ -76,7 +91,7 @@ input:focus {
     height: 60px;
 }
 
-
+/* Hero section */
 #first-imp {
     display: flex;
     flex-direction: column;
@@ -96,6 +111,7 @@ input:focus {
     justify-content: center;
 }
 
+/* Button */
 .button-container {
     display: flex;
     flex-direction: row;
@@ -128,6 +144,7 @@ button:hover,
     border: 2px solid #B5A463;
 }
 
+/* cards and details */
 .card {
     background-color: #1F1E19;
     flex: 1;
@@ -170,40 +187,7 @@ button:hover,
     margin-right: 60px;
 }
 
-.signinbox {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #1F1E19;
-    padding: 60px 48px;
-    border-radius: 40px;
-    gap: 32px;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.dataentry {
-    display: flex;
-    background-color: #E6E5E6;
-    padding: 12px 20px;
-    border-radius: 40px;
-    gap: 8px;
-    width: 343px;
-}
-
-.button-container2 {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
+/* testimonial */
 .testimonial-container {
     display: flex;
     align-items: flex-start;
@@ -250,4 +234,133 @@ button:hover,
 
 .testi p{
     font-size: 16px;
+}
+
+/* CHAT GPT */
+/* Newsletter section styling */
+.newsletter-section {
+    background-color: #FFE993;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-content {
+    text-align: left;
+    max-width: 800px;
+    color: #171416;
+}
+
+.newsletter-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletter-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    font-size: 16px;
+    flex: 1;
+    border: 2px solid #171416;
+    border-radius: 4px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #171416;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #DBC058;
+    color: #171416;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #171416;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links, .footer-social, .footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-links a, .footer-info a, .footer-info p {
+    color: #FFE993;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover, .footer-info a:hover {
+    color: #DBC058;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+/* Create acc */
+
+.signinbox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F1E19;
+    padding: 60px 48px;
+    border-radius: 40px;
+    gap: 32px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dataentry {
+    display: flex;
+    background-color: #E6E5E6;
+    padding: 12px 20px;
+    border-radius: 40px;
+    gap: 8px;
+    width: 343px;
+}
+
+.button-container2 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
