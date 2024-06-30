@@ -53,7 +53,7 @@ p {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-    width: 0.5px;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-track {
