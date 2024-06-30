@@ -60,6 +60,8 @@ input:focus{
 }
 
 #nav-bar{
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -67,6 +69,7 @@ input:focus{
     padding: 20px;
     background-color: #060405;
     border: 1px solid #171416;
+    height: 60px;
 }
 
 
