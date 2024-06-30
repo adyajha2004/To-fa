@@ -1,14 +1,16 @@
 /* Brand Icon text - "Julius Sans One", sans-serif */
-*{
+* {
     font-weight: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lora', serif;
     text-decoration: none;
+    border: none;
 }
 
-html, body{
+html,
+body {
     height: 100%;
 }
 
@@ -22,32 +24,33 @@ body {
     padding-top: 52px;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
 
-h2{
-    text-align : center;
+h2 {
+    text-align: center;
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-h3{
+h3 {
     text-align: center;
     font-size: 24px;
 }
 
-h4{
+h4 {
     font-size: 20px;
     text-align: center;
 }
 
-p{
+p {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 20px;
+    line-height: 24px;
 }
 
-input{
+input {
     border: none;
     outline: none;
     background-color: transparent;
@@ -55,11 +58,11 @@ input{
     padding: 0 2px;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
-#nav-bar{
+#nav-bar {
     display: flex;
     align-items: center;
     position: fixed;
@@ -73,14 +76,15 @@ input:focus{
 }
 
 
-#first-imp{
+#first-imp {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-bottom: 32px;
     background-image: url('background.png');
-    background-size: 100% auto; /* Adjusts background size to cover full width */
+    background-size: 100% auto;
+    /* Adjusts background size to cover full width */
     background-repeat: no-repeat;
     background-position: center;
     padding: 50px;
@@ -98,7 +102,7 @@ input:focus{
     margin-top: 40px;
 }
 
-button{
+button {
     padding: 12px;
     padding-left: 24px;
     padding-right: 24px;
@@ -107,28 +111,29 @@ button{
     color: black;
     transition: all 0.4s;
     border: none;
-    
+
 }
 
-button:hover, #learn-more:hover{
+button:hover,
+#learn-more:hover {
     background-color: #DBC058;
     color: black;
     transform: scale(1.05);
 }
 
-#learn-more{
+#learn-more {
     background-color: #171416;
     color: white;
     border: 2px solid #B5A463;
 }
 
-.card{
+.card {
     background-color: #1F1E19;
-    flex: 1; 
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
     padding: 28px;
     text-align: center;
     border-radius: 8px;
@@ -140,25 +145,31 @@ button:hover, #learn-more:hover{
 }
 
 .card img {
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%;
+    height: auto;
 }
 
-.card-wrap{
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-wrap {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    gap: 20px; 
-    justify-content: center; 
+    gap: 20px;
+    justify-content: center;
 }
 
-.container-box{
+.container-box {
     margin-bottom: 40px;
     margin-left: 60px;
     margin-right: 60px;
 }
 
-.signinbox{
+.signinbox {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -170,13 +181,13 @@ button:hover, #learn-more:hover{
     gap: 32px;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.dataentry{
+.dataentry {
     display: flex;
     background-color: #E6E5E6;
     padding: 12px 20px;
@@ -185,9 +196,57 @@ button:hover, #learn-more:hover{
     width: 343px;
 }
 
-.button-container2{
+.button-container2 {
     margin: 0;
     display: flex;
     flex-direction: column;
     gap: 4px;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    /* border: 1px solid #ccc; */
+    border: none;
+    margin: 0;
+}
+
+.testimonial-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* width: 40%; */
+    padding-left: 60px;
+}
+
+.testi-pfp {
+    width: 40%;
+}
+
+.testi-details {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    word-wrap: break-word;
+    gap: 12px;
+    padding: 20px 0;
+    padding-bottom: 60px;
+}
+
+.card.testi {
+    width: 500px;
+    height: auto;
+    padding: 20px 40px;
+    justify-content: flex-start
+}
+
+.testi p{
+    font-size: 16px;
 }
